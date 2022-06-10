@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../bootstrap.css" />
+  </head>
+  <body>
+    <div class="container-4">
+      <h1 class="change-my-color">
+        Challenge 4 : Change the color of all buttons
+      </h1>
+      <div class="flex-box-pick-color">
+        <form action="">
+          <select
+            name="backdrop"
+            id="background"
+            onchange="buttonColorChange(this)"
+          >
+            <option value="random">Random</option>
+            <option value="reset">Reset</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+          </select>
+        </form>
+        <button class="btn btn-secondary">Wee!</button>
+        <button class="btn btn-primary">Yahoo!</button>
+        <button class="btn btn-warning">Google!</button>
+        <button class="btn btn-danger">Facebook!</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

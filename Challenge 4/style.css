@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-height: 100vh;
+}
+
+.container-4 {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  border: 5px solid black;
+}
+
+.container-4 h1 {
+  font-size: 2rem;
+}
+
+.flex-box-pick-color {
+  display: flex;
+  border: 2px solid black;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
