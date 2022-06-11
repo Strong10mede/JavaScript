@@ -12,6 +12,7 @@ function rps(yourChoice) {
   var result = decideWinner(humanChoice, botChoice);
   console.log(result);
   rpsfrontend(humanChoice, botChoice, finalmessage(result));
+  console.log(finalmessage(result));
 }
 
 function randomBotchoice() {
@@ -33,6 +34,7 @@ function decideWinner(yourChoice, botChoice) {
 
 finalmessage = (score) => {
   if (score === 0) {
+    //in this finalmessage is like var finalmessage :{}
     return { sound: LOSESOUND, message: "u lost", color: "red" };
   } else if (score === 0.5) {
     return { sound: HITSOUND, message: "drawn", color: "yellow" };
