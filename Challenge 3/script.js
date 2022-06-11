@@ -1,5 +1,10 @@
+const HITSOUND = new Audio("./sounds/swish.m4a");
+const WINSOUND = new Audio("./sounds/cash.mp3");
+const LOSESOUND = new Audio("./sounds/aww.mp3");
+
 function rps(yourChoice) {
   var humanChoice, botChoice;
+  HITSOUND.play();
   humanChoice = yourChoice.id;
   botChoice = numberTochoice(randomBotchoice());
   console.log(humanChoice);
@@ -28,11 +33,11 @@ function decideWinner(yourChoice, botChoice) {
 
 finalmessage = (score) => {
   if (score === 0) {
-    return { message: "u lost", color: "red" };
+    return { sound: LOSESOUND, message: "u lost", color: "red" };
   } else if (score === 0.5) {
-    return { message: "drawn", color: "yellow" };
+    return { sound: HITSOUND, message: "drawn", color: "yellow" };
   } else if (score === 1) {
-    return { message: "u win", color: "green" };
+    return { sound: WINSOUND, message: "u win", color: "green" };
   }
 };
 
@@ -65,6 +70,8 @@ function rpsfrontend(humanImageChoice, botImageChoice, finalmesssage) {
     "<img src='" +
     imageDatabase[botImageChoice] +
     "' width='20vw' height='20vh' />";
+
+  finalmesssage.sound.play();
 
   document.getElementById("flex-box-rps").appendChild(humanDiv);
   document.getElementById("flex-box-rps").appendChild(messageDiv);

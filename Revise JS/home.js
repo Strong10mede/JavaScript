@@ -73,21 +73,21 @@ let random; //undefined
 let nothing = null; /*value (null)*/
 
 // Strings in Js (common methods)
-// let fruits = "banana,apple,oranges";
-// let moreFruits = "banana\napple";
-// console.log(moreFruits);
-// console.log(fruits.length);
-// console.log(fruits.indexOf("q")); //not exist -1
-// console.log(fruits.indexOf("nan"));
-// console.log(fruits.slice(2, 6));
-// console.log(fruits.replace("nan", "123"));
-// console.log(fruits.toUpperCase);
-// console.log(fruits.split(",")); //split by comma
-// console.log(fruits.split("")); //split by character
+let fruit = "banana,apple,oranges";
+let moreFruits = "banana\napple";
+console.log(moreFruits);
+console.log(fruit.length);
+console.log(fruit.indexOf("q")); //not exist -1
+console.log(fruit.indexOf("nan"));
+console.log(fruit.slice(2, 6));
+console.log(fruit.replace("nan", "123"));
+console.log(fruit.toUpperCase());
+console.log(fruit.split(",")); //split words by comma
+console.log(fruit.split("")); //split by character
 
 //arrays
 let fruits = ["apples", "oranges", "banana", "pineapples"];
-fruits = new Array("apples", "oranges", "banana", "pineapples");
+fruits = new Array("applese", "oranges", "banana", "pineapples");
 fruits[2] = "pear";
 console.log(fruits[2]); //access value at index
 for (let i = 0; i < fruits.length; i++) {
